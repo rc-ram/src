@@ -1,0 +1,35 @@
+This file covers the thinking as I am about to create the test cases. Changes to the file will be made accordingly. The goal for this file is provide a map of the thought process.
+
+Expected: 
+
+    - Test a service
+    - Service accepts a json 
+    - Service output is a json
+
+Things to Test: 
+
+    - Test input
+        - correct input
+            - square room
+            - rectangular room
+            - single directional move - row 
+            - single directional move - columns
+            - circular move 
+        - maligned input
+            - -ve input
+            - malformed input (missing comma, brackets) 
+            - missing keys
+            - misspelt keys
+            - unexpected input 
+            - wrong brackets 
+            - complete gibberish
+            - starting coordinate outside of the rectangle
+        - edge cases
+            - max, min
+            - single row room 
+            - single column room 
+            - 2x2 room 
+            - 1x1 room 
+    - Correctness of the output
+        - error handling
+        - correct garbage cleaned up
