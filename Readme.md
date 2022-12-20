@@ -38,7 +38,12 @@ Report:
 
     The service to simulate a robot cleaning a given room was tested. A list of all the tests performed is listed above. There were some that were left out.
 
-    To run all tests: 
+    Install: 
+    
+        Please follow instructions on https://codecept.io/api/#installation and follow along to install the required. 
+    
+    To run all tests:
+
         npx codeceptjs run  --debug 
 
         valid room input tests: npx codeceptjs run  --debug --grep '@validroom'

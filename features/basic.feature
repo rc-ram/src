@@ -9,4 +9,4 @@ Feature: CleanRoom
     And what I cleaned 
 
   Scenario: Clean the room
-    Given I have the 
+    Given Nothing

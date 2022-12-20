@@ -1,6 +1,6 @@
 const { I } = inject();
 // Add in your custom step files
 
-Given('Clean the room', () => {
+Given('Nothing', () => {
   // TODO: replace with your own step
 });
