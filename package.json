@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "codeceptjs": "^3.3.7"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
   }
 }
