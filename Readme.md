@@ -1,12 +1,12 @@
 This file covers the thinking as I am about to create the test cases. Changes to the file will be made accordingly. The goal for this file is provide a map of the thought process.
 
-Expected: 
+## Expected: 
 
     - Test a service
     - Service accepts a json 
     - Service output is a json
 
-Things to Test: 
+## Things to Test: 
 
     - Test input
         - correct input
@@ -34,7 +34,7 @@ Things to Test:
             - Non-POST request  - DONE
         - correct garbage cleaned up
 
-Report: 
+## Report:  
 
     The service to simulate a robot cleaning a given room was tested. A list of all the tests performed is listed above. There were some that were left out.
 
@@ -53,8 +53,9 @@ Report:
         edge case tests:      : npx codeceptjs run  --debug --grep '@edgecase'
         circular path test    : npx codeceptjs run  --debug --grep '@slow'
 
-    Here are the tests that weren't done and why: 
-        I didn't have time to figure out the way to pass in json as a string in the data table. Plus, these seemed a P2 case since the schema not matching
+    Here are the tests that weren't done and why:
+    
+        I didn't have time to figure out the way to pass in json as a string in the data table. Plus, these seemed a P2 case since the schema not    matching
         has been tested:
             - malformed input (missing comma, brackets) 
             - wrong brackets 
@@ -62,6 +63,7 @@ Report:
         - correct garbage cleaned up
 
     Some optimizations were made to be able to test easily: 
+    
         The correctness of the cleanup and robot positioning was tested via a couple of manually computed patches and resting coords. This is an area 
         of improvement which could automate testing to figure out bugs in the service logic. 
 
@@ -71,7 +73,7 @@ Report:
         I couldn't figure out how to enable that with data_tables. The directory would also look a lot cleaner if the data tables were organized in one folder.
         This would be a V2 backlog item and can be fixed with better knowledge of the system. 
 
-    Suggestions to the dev team: 
+    Suggestions to the dev team:
 
         - Overall, the service looks quite stable despite the bugs. Congratulations!
         - The "roomsize" key needs to be guarded since it seems to result in server error. Please check server logs. 
@@ -82,7 +84,7 @@ Report:
         - Cleanup the test dir and organize better
         - Enable performance testing
         - Enable automatic validation of service correctness
-BUGS: 
+## BUGS: 
 
     - Single row/column room doesn't move the robot despite giving valid move instructions
         - Consequently, the patches aren't cleaned 
