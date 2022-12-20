@@ -3,6 +3,7 @@ This file covers the thinking as I am about to create the test cases. Changes to
 ## Expected: 
 
     - Test a service
+    Given:
     - Service accepts a json 
     - Service output is a json
 
